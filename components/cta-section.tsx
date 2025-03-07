@@ -17,7 +17,7 @@ export default function CTASection() {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-white/90 mb-8">
-            Book an appointment today and experience the Caring Touch difference.
+            Book an appointment today and experience the Caring Touchh difference.
           </p>
           <Button size="lg" variant="secondary" className="bg-white text-teal-600 hover:bg-teal-50" asChild>
             <Link href="/book">Schedule a Visit</Link>

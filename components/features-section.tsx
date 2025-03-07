@@ -1,32 +1,32 @@
-"use client"
+"use client";
 
-import { Card } from "@/components/ui/card"
-import { Medal, Shield, Clock, Heart } from "lucide-react"
-import { motion } from "framer-motion"
+import { Card } from "@/components/ui/card";
+import { Medal, Shield, Clock, Heart } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function FeaturesSection() {
   const features = [
     {
       icon: Medal,
       title: "Experienced Nurses",
-      description: "Our nurses are highly qualified with years of experience"
+      description: "Our nurses are highly qualified with years of experience",
     },
     {
       icon: Shield,
       title: "Licensed & Insured",
-      description: "Fully licensed and insured for your peace of mind"
+      description: "Fully licensed and insured for your peace of mind",
     },
     {
       icon: Clock,
       title: "24/7 Availability",
-      description: "Round-the-clock care when you need it most"
+      description: "Round-the-clock care when you need it most",
     },
     {
       icon: Heart,
       title: "Compassionate Care",
-      description: "Treating patients with dignity and respect"
-    }
-  ]
+      description: "Treating patients with dignity and respect",
+    },
+  ];
 
   return (
     <section className="py-16 bg-gray-50">
@@ -37,7 +37,9 @@ export default function FeaturesSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold text-gray-900">Why Choose Caring Touch?</h2>
+          <h2 className="text-3xl font-bold text-gray-900">
+            Why Choose Caring Touchh?
+          </h2>
           <p className="mt-4 text-lg text-gray-600">
             We provide exceptional care with a personal touch
           </p>
@@ -48,9 +50,12 @@ export default function FeaturesSection() {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: index * 0.1 },
+              }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
             >
               <Card className="p-6 text-center">
@@ -65,5 +70,5 @@ export default function FeaturesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

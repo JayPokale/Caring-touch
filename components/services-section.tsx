@@ -1,49 +1,61 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Stethoscope, Baby, Hospital, Activity, UserCog, Bed, Heart } from "lucide-react"
-import Link from "next/link"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import {
+  Stethoscope,
+  Baby,
+  Hospital,
+  Activity,
+  UserCog,
+  Bed,
+  Heart,
+} from "lucide-react";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ServicesSection() {
   const services = [
     {
       title: "Elder Care",
       icon: UserCog,
-      description: "Specialized care and support for elderly patients with compassion and dignity."
+      description:
+        "Specialized care and support for elderly patients with compassion and dignity.",
     },
     {
       title: "Post Operative Care",
       icon: Stethoscope,
-      description: "Professional care and monitoring during post-surgery recovery period."
+      description:
+        "Professional care and monitoring during post-surgery recovery period.",
     },
     {
       title: "Mother and Baby Care",
       icon: Baby,
-      description: "Specialized care for new mothers and infants during the postnatal period."
+      description:
+        "Specialized care for new mothers and infants during the postnatal period.",
     },
     {
       title: "Palliative Care",
       icon: Heart,
-      description: "Compassionate care focusing on comfort and quality of life for patients."
+      description:
+        "Compassionate care focusing on comfort and quality of life for patients.",
     },
     {
       title: "Patient Assistance",
       icon: Bed,
-      description: "Daily assistance with medical and personal care needs."
+      description: "Daily assistance with medical and personal care needs.",
     },
     {
       title: "Monitoring & Vital Checks",
       icon: Activity,
-      description: "Regular monitoring of vital signs and health parameters."
+      description: "Regular monitoring of vital signs and health parameters.",
     },
     {
       title: "Hospital Assistance",
       icon: Hospital,
-      description: "Professional support during hospital stays and procedures."
-    }
-  ]
+      description: "Professional support during hospital stays and procedures.",
+    },
+  ];
 
   return (
     <section className="py-16">
@@ -65,9 +77,12 @@ export default function ServicesSection() {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: index * 0.1 },
+              }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
             >
               <Card className="group overflow-hidden h-full">
@@ -76,9 +91,15 @@ export default function ServicesSection() {
                     <div className="absolute inset-0 bg-teal-100 rounded-full opacity-20 group-hover:scale-110 transition-transform duration-300"></div>
                     <service.icon className="h-12 w-12 text-teal-600 relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {service.title}
+                  </h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Button variant="outline" className="text-teal-600 border-teal-200 hover:bg-teal-50 w-full" asChild>
+                  <Button
+                    variant="outline"
+                    className="text-teal-600 border-teal-200 hover:bg-teal-50 w-full"
+                    asChild
+                  >
                     <Link href="/services">Learn More</Link>
                   </Button>
                 </div>
@@ -88,5 +109,5 @@ export default function ServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

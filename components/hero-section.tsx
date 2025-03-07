@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Heart, ArrowRight } from "lucide-react"
-import Link from "next/link"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import { Heart, ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   const stats = [
     { label: "Years Experience", value: "15+" },
     { label: "Qualified Nurses", value: "50+" },
     { label: "Satisfied Patients", value: "1000+" },
-    { label: "Available Cities", value: "10+" }
-  ]
+    { label: "Available Cities", value: "10+" },
+  ];
 
   return (
     <section className="relative bg-gradient-to-b from-teal-50 to-white">
@@ -29,7 +29,9 @@ export default function HeroSection() {
               className="inline-flex items-center px-4 py-2 rounded-full bg-teal-100 text-teal-700 mb-8"
             >
               <Heart className="h-4 w-4 mr-2" />
-              <span className="text-sm font-medium">Trusted Healthcare Provider</span>
+              <span className="text-sm font-medium">
+                Trusted Healthcare Provider
+              </span>
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -47,7 +49,8 @@ export default function HeroSection() {
               transition={{ delay: 0.4 }}
               className="text-xl mb-8 text-gray-600 leading-relaxed"
             >
-              Bringing professional medical care to your doorstep. Available 24/7 for all your healthcare needs.
+              Bringing professional medical care to your doorstep. Available
+              24/7 for all your healthcare needs.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -55,9 +58,9 @@ export default function HeroSection() {
               transition={{ delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6 bg-teal-600 hover:bg-teal-700 text-white" 
+              <Button
+                size="lg"
+                className="text-lg px-8 py-6 bg-teal-600 hover:bg-teal-700 text-white"
                 asChild
               >
                 <Link href="/book" className="flex items-center">
@@ -65,10 +68,10 @@ export default function HeroSection() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-lg px-8 py-6 border-2 border-teal-200 text-teal-700 hover:bg-teal-50" 
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-6 border-2 border-teal-200 text-teal-700 hover:bg-teal-50"
                 asChild
               >
                 <Link href="/services">Our Services</Link>
@@ -87,12 +90,17 @@ export default function HeroSection() {
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 + index * 0.1 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { delay: 0.2 + index * 0.1 },
+                  }}
                   className="bg-white rounded-2xl p-6 shadow-lg shadow-teal-100"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="text-3xl font-bold text-teal-600 mb-1">{stat.value}</div>
+                  <div className="text-3xl font-bold text-teal-600 mb-1">
+                    {stat.value}
+                  </div>
                   <div className="text-sm text-gray-600">{stat.label}</div>
                 </motion.div>
               ))}
@@ -101,5 +109,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

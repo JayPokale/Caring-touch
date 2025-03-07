@@ -31,7 +31,7 @@ const Navbar = () => {
             <Link href="/" className="flex items-center group">
               <Heart className="h-8 w-8 text-teal-600 group-hover:text-teal-700 transition-colors" />
               <span className="ml-2 text-xl font-semibold bg-gradient-to-r from-teal-600 to-teal-800 bg-clip-text text-transparent">
-                Caring Touch
+                Caring Touchh
               </span>
             </Link>
           </div>

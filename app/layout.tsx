@@ -9,7 +9,7 @@ import Footer from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Caring Touch - Professional Home Nursing Services',
+  title: 'Caring Touchh - Professional Home Nursing Services',
   description: 'Professional and compassionate home nursing care services. Schedule a nurse visit for medical and daily care needs.',
 };
 

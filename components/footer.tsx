@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center">
               <Heart className="h-6 w-6 text-primary" />
-              <span className="ml-2 text-lg font-semibold">Caring Touch</span>
+              <span className="ml-2 text-lg font-semibold">Caring Touchh</span>
             </div>
             <p className="text-sm text-gray-600">
               Professional and compassionate home nursing care services.
@@ -49,7 +49,7 @@ const Footer = () => {
         
         <div className="mt-8 border-t border-gray-200 pt-8">
           <p className="text-sm text-gray-400 text-center">
-            © {new Date().getFullYear()} Caring Touch. All rights reserved.
+            © {new Date().getFullYear()} Caring Touchh. All rights reserved.
           </p>
         </div>
       </div>

@@ -17,6 +17,7 @@ export default function MobileNav() {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'Book Appointment', href: '/book' },
+    { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
   ]
 

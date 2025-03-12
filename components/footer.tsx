@@ -42,7 +42,7 @@ const Footer = () => {
               <li className="text-sm text-gray-600">1234 Care Street</li>
               <li className="text-sm text-gray-600">Nursingtown, NT 12345</li>
               <li className="text-sm text-gray-600">Phone: (555) 123-4567</li>
-              <li className="text-sm text-gray-600">Email: care@caringtouch.com</li>
+              <li className="text-sm text-gray-600">Email: care@caringtouchh.com</li>
             </ul>
           </div>
         </div>

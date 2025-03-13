@@ -130,7 +130,7 @@ export default function ServicesPage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Card className="h-full overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1 h-full">
                     <div className="flex items-center mb-4">
                       <div className="relative mr-4">
                         <div className="absolute inset-0 bg-teal-100 rounded-full opacity-20"></div>
@@ -147,7 +147,7 @@ export default function ServicesPage() {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-teal-600 hover:bg-teal-700" asChild>
+                    <Button className="w-full bg-teal-600 hover:bg-teal-700 mt-auto" asChild>
                       <Link href="/book">Book This Service</Link>
                     </Button>
                   </div>

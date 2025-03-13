@@ -41,7 +41,7 @@ export default function ContactPage() {
       title: "Email",
       details: [
         "care@caringtouchh.com",
-        "support@caringtouchh.com"
+        "help@caringtouchh.com"
       ]
     },
     {
@@ -88,7 +88,7 @@ export default function ContactPage() {
 
         {/* Contact Info Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8">
             {contactInfo.map((info, index) => (
               <motion.div
                 key={info.title}
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <Card className="p-6 text-center hover:shadow-lg transition-shadow duration-300 h-full">
                   <div className="flex justify-center mb-4">
                     <div className="relative">
                       <div className="absolute inset-0 bg-teal-100 rounded-full opacity-20"></div>

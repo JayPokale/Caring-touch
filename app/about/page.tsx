@@ -89,7 +89,7 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8">
             {values.map((value, index) => (
               <motion.div
                 key={value.title}
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="p-6 text-center hover:shadow-lg transition-shadow duration-300">
+                <Card className="p-6 text-center hover:shadow-lg transition-shadow duration-300 h-full">
                   <div className="flex justify-center mb-4">
                     <div className="relative">
                       <div className="absolute inset-0 bg-teal-100 rounded-full opacity-20"></div>

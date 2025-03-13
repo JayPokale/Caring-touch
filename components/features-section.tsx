@@ -45,7 +45,7 @@ export default function FeaturesSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -58,7 +58,7 @@ export default function FeaturesSection() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
             >
-              <Card className="p-6 text-center">
+              <Card className="p-6 text-center h-full">
                 <div className="flex justify-center mb-4">
                   <feature.icon className="h-12 w-12 text-teal-600" />
                 </div>

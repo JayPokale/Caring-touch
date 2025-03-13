@@ -85,11 +85,10 @@ export default function ServicesSection() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
             >
-              <Card className="group overflow-hidden h-full">
-                <div className="p-6">
+              <Card className="overflow-hidden h-full">
+                <div className="p-6 flex flex-col flex-1 h-full">
                   <div className="mb-4 relative">
-                    <div className="absolute inset-0 bg-teal-100 rounded-full opacity-20 group-hover:scale-110 transition-transform duration-300"></div>
-                    <service.icon className="h-12 w-12 text-teal-600 relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
+                    <service.icon className="h-12 w-12 text-teal-600 relative z-10 transform transition-all duration-300" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">
                     {service.title}
@@ -97,7 +96,7 @@ export default function ServicesSection() {
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Button
                     variant="outline"
-                    className="text-teal-600 border-teal-200 hover:bg-teal-50 w-full"
+                    className="text-teal-600 border-teal-200 hover:bg-teal-50 w-full mt-auto"
                     asChild
                   >
                     <Link href="/services">Learn More</Link>
